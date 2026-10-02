@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VerdeViva & Organico</title>
+    <title>VerveViva | Plantas & Jardinagem</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -14,8 +14,8 @@
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-success navbar-dark">
         <div class="container-fluid">
-
-            <a class="navbar-brand" href="#"><i class="bi bi-flower1 me-2"></i>Verde Viva</a>
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-flower1 me-2"></i>Verde Viva</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -23,25 +23,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="inicio">Início</a>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="categoria">Categoria</a>
+                        <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="produtos">Produtos</a>
+                        <a class="nav-link active" aria-current="page" href="#categorias">Categoria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="duvidas">Duvídas</a>
+                        <a class="nav-link active" aria-current="page" href="#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contatos">Contatos</a>
+                        <a class="nav-link active" aria-current="page" href="#duvidas">Duvidas</a>
                     </li>
                     <li class="nav-item">
-                    </li>
+                        <a class="nav-link active" aria-current="page" href="#contatos">Contatos</a>
                     </li>
                 </ul>
             </div>
@@ -53,12 +50,31 @@
         <section id="inicio">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
-                    <div class="carousel-item active bg-success text-white text-center p-5">
+
+                    <!-- Carousel 01 -->
+                    <div class="carousel-item active
+                    bg-success text-white text-center p-5">
                         <h1>Deixe sua casa mais verde.</h1>
                         <p class="fs-5">Plantas selecionadas para transformar seus ambientes.</p>
-                        <a href="produtos" class="btn btn-light">Conhecer produtos</a>
+                        <a href="#produtos" class="btn btn-light">Conhecer produtos</a>
                     </div>
-                  
+
+                    <!-- Carousel 02 -->
+                    <div class="carousel-item 
+                    bg-warning text-dark text-center p-5">
+                        <h1>Semana dos Vasos</h1>
+                        <p class="fs-5">Ofertas especiais em vasos e acessorios</p>
+                        <a href="#produtos" class="btn btn-dark">Ver Ofertas</a>
+                    </div>
+
+                    <!-- Carousel 03 -->
+                    <div class="carousel-item 
+                    bg-dark text-white text-center p-5">
+                        <h1>Seu jardim começa aqui</h1>
+                        <p class="fs-5">Ferranentas e acessorios para cuidar melhor das suas plantas.</p>
+                        <a href="#categorias" class="btn btn-light">Explorar Categorias</a>
+                    </div>
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
@@ -72,6 +88,118 @@
                 </button>
             </div>
         </section>
+
+        <!-- Alert -->
+        <section class="container mt-4">
+            <div class="alert alert-success text-center" role="alert">
+                <i class="bi bi-truck"></i>
+                <strong>Frete grátis!</strong>
+                Para compras acima de R$ 150,00.
+            </div>
+        </section>
+
+        <!-- Card -->
+        <section class="container text-center mt-5" id="categorias">
+            <!-- Titulo -->
+            <div>
+                <h2 class="fw-bold">Nossas Categorias</h2>
+                <p class="text-secondary">Encontre tudo o que precisa para deixar seu espaço mais verde.</p>
+            </div>
+            <div class="row mb-5 g-3">
+                <div class="col col-md">
+                    <!-- Card 01 -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-flower3 text-success" style="font-size: 4rem;"></i>
+                            <h5 class="card-title">Plantas</h5>
+                            <p class="card-text">Plantas para ambientes internos e externos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md">
+                    <!-- Card 02 -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-basket-fill text-success" style="font-size: 4rem;"></i>
+                            <h5 class="card-title">Vasos</h5>
+                            <p class="card-text">Vasos decorativos de diferentes tamanhos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md">
+                    <!-- Card 03 -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-tools text-success" style="font-size: 4rem;"></i>
+                            <h5 class="card-title">Ferramentas</h5>
+                            <p class="card-text">Ferramentas para cuidar do seu jardim.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md">
+                    <!-- Card 04 -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <i class="bi bi-droplet-half text-success" style="font-size: 4rem;"></i>
+                            <h5 class="card-title">Acessórios</h5>
+                            <p class="card-text">Produtos para facilitar os cuidados diários.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <!-- Card Produtos -->
+        <section class="container-fluid bg-secondary-subtle">
+            <div class="container text-center mt-5" id="produtos">
+                <div>
+                    <h2 class="mt-5 fw-bold">Produtos em Destaque</h2>
+                    <p class="text-secondary">Conheça alguns dos produtos selecionados pela VerdeViva.</p>
+                </div>
+
+                <div class="row pb-5">
+                    <div class="col col-mg">
+                        <!-- Card o1 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lírios</h5>
+                                <p class="card-text">Os lírios são flores majestosas da família Liliaceae, conhecido por
+                                    sua elegância, perfume marcante e formato de trompete . Com grandes e cores
+                                    vibrantes que variam do branco puro ao rosa, amarelo e laranja, carregam um forte
+                                    simbolismo de pureza, renovação e sofisticação.</p>
+
+                                <!-- Preço Antigo -->
+                                <p class="text-secondary text-decoration-line-through">R$ 99,90</p>
+
+                                <!-- Preço Atual -->
+
+                                <h4 class="text-success">R$ 89,90</h4>
+                                <div>
+                                    <button type="button" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                        data-bs-target="#detalhesProduto">
+
+                                        <i class="bi bi-eye me-1"></i>
+                                        Ver detalhes
+                                    </button>
+                                    <a href=""class= "btn btn-success w-100 mt-2">
+                                        <i class="bi bi-whatsapp"></i>
+                                        Comprar pelo WhatsApp
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col col-mg">
+
+                                <div class="row">
+                                    <div class="col col-mg">
+
+
 
     </main>
 
